@@ -12,6 +12,7 @@
 	width: 28rem;
 	padding: 7rem 0 14.5rem;
 	text-align: center;
+	/* styled-component 사용 */
 	color: var(--gray-background-light);
 }
 

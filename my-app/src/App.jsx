@@ -1,4 +1,5 @@
-import './reset.css'
+import './styles/reset.css'
+import './styles/Global.css'
 import HomePage from "./pages/HomePage/HomePage";
 
 
