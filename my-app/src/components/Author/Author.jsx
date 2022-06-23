@@ -1,5 +1,5 @@
 import './author.css'
-import profile from '../../assets/images/profile.jpg'
+import profile from '../../assets/profile.jpg'
 
 export default function Author() {
     return (

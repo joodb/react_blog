@@ -1,9 +1,9 @@
 import './about.css'
-import profileImg from '../../assets/images/profile.jpg';
-import Facebook from '../../assets/images/Facebook.svg';
-import Twitter from '../../assets/images/Twitter.svg';
-import Instagram from '../../assets/images/Instagram.svg';
-import Github from '../../assets/images/Github.svg';
+import profileImg from '../../assets/profile.jpg';
+import Facebook from '../../assets/Facebook.svg';
+import Twitter from '../../assets/Twitter.svg';
+import Instagram from '../../assets/Instagram.svg';
+import Github from '../../assets/Github.svg';
 import Categories from '../Categories/Categories';
 
 
