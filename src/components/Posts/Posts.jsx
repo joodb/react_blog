@@ -7,7 +7,7 @@ export default function Posts({posts}) {
             <h2 className="a11y-hidden">Post</h2>
             <ul className="posts">
                 {posts.slice(0).reverse().map( post => {
-                    return (<Post post={post}/>);
+                    return (<Post key={post.id} post={post}/>);
                 })}
             </ul>
         </>

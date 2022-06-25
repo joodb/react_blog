@@ -5,7 +5,7 @@ export default function Category({category}) {
         <dl className="category">
             <dt className="a11y-hidden">Category</dt>
             {category.map( category => {
-                return (<dd>{category}</dd>);
+                return (<dd key={category}> {category}</dd>);
             })}
         </dl>
     )
