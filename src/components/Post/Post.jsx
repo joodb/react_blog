@@ -1,18 +1,24 @@
 import './post.css'
 import Category from '../Category/Category'
 import Author from '../Author/Author'
+import { Link } from 'react-router-dom'
 
-export default function Post() {
+
+export default function Post({post}) {
+
+    console.log(post.thumbnail);
+    console.log(process.env.PUBLIC_URL);
     return (
-        <li>
-            <a href="post-view.html" class="post">
+        <li id={post.id}>
+            <Link to="post-view" className="post">
                 <article>
-                    <img src="./images/post-img6.jpg" alt="" />
-                    <div class="contents-wrap">
-                        <Category/>
+                    <img src={process.env.PUBLIC_URL+post.thumbnail} alt="" />
+                    <div className="contents-wrap">
+                        {/* 카테고리 에러 확인 필요 */}
+                        <Category category={post.category}/>
                         <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit</h3>
-                        <Author/>
-                        <p class="post-description">
+                        <Author userName={post.userName}/>
+                        <p className="post-description">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore illum nostrum perferendis voluptas, voluptate soluta corrupti dolore quidem. Placeat, eaque! Exercitationem est
                             facilis dolor quas odio cum incidunt repudiandae vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore illum nostrum perferendis voluptas, voluptate soluta
                             corrupti dolore quidem. Placeat, eaque! Exercitationem est facilis dolor quas odio cum incidunt repudiandae vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
@@ -22,7 +28,7 @@ export default function Post() {
                         </p>
                     </div>
                 </article>
-            </a>
+            </Link>
         </li>
     )
 }

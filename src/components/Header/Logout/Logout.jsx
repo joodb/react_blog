@@ -1,6 +1,6 @@
 import '../../Button/button.css'
-import login from '../../assets/icon-login.svg'
-import register from '../../assets/icon-register.svg'
+import login from '../../../assets/icon-login.svg'
+import register from '../../../assets/icon-register.svg'
 
 export default function Button() {
   return (
@@ -12,7 +12,7 @@ export default function Button() {
         </a>
       </li>
       <li className="only-pc">
-        <a href="#" claclassNamess="button gray">
+        <a href="#" className="button gray">
           <img src={register} alt="" />
           <span>Register</span>
         </a>

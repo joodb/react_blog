@@ -3,15 +3,15 @@ import About from '../About/About'
 import Posts from '../Posts/Posts'
 
 
-export default function Main() {
+export default function Main( { posts, users }) {
     return (
 		<main>
 			{/* <!-- posts --> */}
 			<div className="max-width">
-				<Posts/>
+				<Posts posts={posts}/>
 				{/* <!-- //posts --> */}
 
-                <About/>
+                <About users={users}/>
 			</div>
 		</main>
 		/* <!-- //main --> */

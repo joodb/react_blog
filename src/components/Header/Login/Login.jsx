@@ -1,6 +1,6 @@
 import '../../Button/button.css'
-import modifyWhite from '../../assets/icon-modify-white.svg'
-import logout from '../../assets/icon-logout.svg'
+import modifyWhite from '../../../assets/icon-modify-white.svg'
+import logout from '../../../assets/icon-logout.svg'
 
 export default function Button() {
   return (
