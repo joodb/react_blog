@@ -12,7 +12,7 @@ export default function Post({post}) {
         <li id={post.id}>
             <Link to="post-view" className="post">
                 <article>
-                    <img src={process.env.PUBLIC_URL+post.thumbnail} alt="" />
+                    <img src={post.thumbnail} alt="" />
                     <div className="contents-wrap">
                         {/* 카테고리 에러 확인 필요 */}
                         <Category category={post.category}/>
