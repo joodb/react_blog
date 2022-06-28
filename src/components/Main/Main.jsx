@@ -11,7 +11,7 @@ export default function Main( { posts, users }) {
 				<Posts posts={posts}/>
 				{/* <!-- //posts --> */}
 
-                <About users={users}/>
+				<About users={users}/>
 			</div>
 		</main>
 		/* <!-- //main --> */
