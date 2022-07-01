@@ -6,6 +6,7 @@ import Posts from '../Posts/Posts'
 export default function Main( { posts, users }) {
     return (
 		<main>
+			
 			{/* <!-- posts --> */}
 			<div className="max-width">
 				<Posts posts={posts}/>

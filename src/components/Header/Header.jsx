@@ -1,18 +1,20 @@
-import Logo from './Logo/Logo'
 import "./header.css";
 import Profile from './Profile/Profile';
 import Login from '../Header/Login/Login';
-import Logout from '../Header/Logout/Logout';
+import logo from '../../assets/Logo.svg'
 
 export default function Header({users}) {
     return (
 			<header>
 				<div className="max-width">
-				<Logo/>
+				<h1>
+            <a href="./">
+                <img src={logo} alt="My Blog" />
+            </a>
+        </h1>
 				<ul>
 					<Profile profileImg={users[0].profileImg}/>
 					<Login/>
-					<Logout/>
 				</ul>
 			</div>
 		</header>
